@@ -32,7 +32,8 @@ h1 {
 }
 
 .h1-p p {
-  margin-top: 0;
+  margin-top: 8px;
+  margin-bottom: 0;
 }
 
 ul {
@@ -54,7 +55,7 @@ header img {
   height: 24px;
   width: 24px;
   border: 2px solid #d9d9d9;
-  margin-top: 15px;
+  /*margin-top: 15px;*/
 }
 
 .div-info {
@@ -65,7 +66,7 @@ header img {
   gap: 10px;
 }
 .div-info p {
-  margin-top: 30px;
+  /* margin-top: 30px;*/
   font-size: 16px;
 }
 
@@ -78,15 +79,23 @@ li:hover {
   border-top: 2px solid blue;
 }
 
+.icone-recherche {
+  display: none;
+}
+
 .form-search-bar {
   display: flex;
-  /*align-items: center;*/
-  margin-top: 30px;
+  align-items: center;
+  /*margin-top: 30px;*/
 }
 
 .main-container {
   margin-left: 50px;
   margin-right: 50px;
+}
+
+.fa-magnifying-glass {
+  display: none;
 }
 
 .champ-de-saisie-bar {
@@ -128,10 +137,10 @@ li:hover {
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 18px;
   margin-top: 0;
   margin-bottom: 30px;
-  margin: 1px;
+  margin: 2px;
 }
 
 .filtre button {
@@ -146,8 +155,13 @@ button i {
   display: flex;
   gap: 10px;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.filtres .filtres-buttons {
+  display: flex;
 }
 
 .carte-filtres:hover {
@@ -155,10 +169,10 @@ button i {
 }
 
 .entete {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 35px;
 }
 
 .carte-filtres {
@@ -166,7 +180,7 @@ button i {
   border-radius: 25px;
   display: flex;
   gap: 10px;
-
+  margin: 5px;
   padding: 4px 19px;
   background-color: white;
   font-weight: bold;
@@ -178,6 +192,11 @@ button i {
 h3 {
   margin-top: 0;
   margin-bottom: 25px;
+}
+
+.hebergements h2 {
+  font-size: 22px;
+  margin-bottom: 30px;
 }
 
 .hebergements-card img {
@@ -236,13 +255,15 @@ a {
   font-size: 22px;
 }
 
-h4.card-title {
+h3.card-title {
+  font-size: 16px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 p.card-subtitle {
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .card {
@@ -265,6 +286,7 @@ p.card-subtitle {
 
 .card-title {
   font-size: 16px;
+  margin-top: 0;
 }
 
 .euro {
@@ -286,7 +308,7 @@ p.card-subtitle {
 
 .hebergements-and-populaires section {
   margin: 0;
-  margin-top: 20px;
+
   background-color: var(--main-bg-color);
   border-radius: 20px;
   padding: 30px;
@@ -381,6 +403,15 @@ h5 {
 @media (max-width: 1024px) {
   .filtres {
     display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .filtres .filtres-buttons {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 16px;
+    text-wrap: nowrap;
   }
 
   .carte-filtres {
@@ -393,6 +424,10 @@ h5 {
     margin-right: 10px;
   }
 
+  .icone-recherche {
+    display: none;
+  }
+
   .champ-de-saisie-bar {
     height: 46px;
     border: none;
@@ -402,6 +437,15 @@ h5 {
     font-size: 18px;
     text-align: center;
     width: 195px;
+  }
+
+  .div-info {
+    border: 16;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    gap: 10px;
+    height: 19px;
   }
 
   .hebergements-and-populaires {
@@ -471,14 +515,67 @@ h5 {
     font-size: 25px;
   }
 
-  header img {
-    width: 14%;
-    height: 16%;
-    padding: 30px;
+  .bouton-rechercher {
+    display: none;
+  }
+
+  .fa-magnifying-glass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0065fc;
+    border: none;
+    border-radius: 15px;
+    width: 49px;
+    height: 49px;
+    color: white;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .cartes-filtres {
+    display: grid;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    /*padding: 4px 19px;*/
+    background-color: white;
+    font-weight: bold;
+    height: 50px;
+    align-items: center;
+    font-size: 17px;
+  }
+
+  .icone-recherche i {
+    color: #ffffff;
+  }
+
+  ul {
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 0;
+    gap: 0;
+  }
+
+  li {
+    padding-top: 16px;
+    border-bottom: 2px solid #f2f2f2;
+    padding-bottom: 16px;
+    width: 188px;
+    text-align: center;
+  }
+
+  li:hover {
+    color: blue;
+    border-bottom: 2px solid blue;
+    border-top: 0;
+    padding-bottom: 16px;
   }
 
   h1 {
     font-size: 22px;
-    width: ;
+    padding-bottom: 10px;
+    margin-top: 0;
   }
 }
