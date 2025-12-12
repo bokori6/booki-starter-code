@@ -10,13 +10,14 @@
 }
 
 .fa-solid {
-  color: var(--main-color);
+  color: #0065fc;
 }
 
 body {
   display: flex;
   justify-content: center;
   margin: 0;
+  max-width: 1440px;
 }
 
 header {
@@ -515,6 +516,7 @@ h5 {
   h1 {
     font-size: 22px;
     margin-top: 0;
+    margin-bottom: 10px;
   }
 
   .h1-p p {
