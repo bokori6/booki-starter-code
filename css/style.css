@@ -16,8 +16,7 @@
 body {
   display: flex;
   justify-content: center;
-  margin: 0;
-  max-width: 1440px;
+  margin: 0 auto;
 }
 
 header {
@@ -48,6 +47,7 @@ header img {
   height: 19px;
   margin: 30px 0px;
 }
+
 .div-info i {
   display: flex;
   justify-content: center;
@@ -76,8 +76,8 @@ li {
 }
 
 li:hover {
-  color: blue;
-  border-top: 2px solid blue;
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
 }
 
 .icone-recherche {
@@ -93,6 +93,8 @@ li:hover {
 .main-container {
   margin-left: 50px;
   margin-right: 50px;
+  overflow: hidden;
+  max-width: 1440px;
 }
 
 .fa-magnifying-glass {
@@ -378,9 +380,9 @@ p.card-subtitle {
   align-items: center;
 }
 
-.assistance-p {
+/*.assistance-p {
   padding-right: 45px;
-}
+}*/
 
 footer {
   display: flex;
@@ -419,7 +421,6 @@ h5 {
   }
 
   .carte-filtres {
-    display: inline-block;
     margin-right: 10px;
     margin-top: 20px;
   }
@@ -538,15 +539,17 @@ h5 {
   }
 
   .carte-filtres {
+    display: flex;
+    gap: 5px;
     font-size: 14px;
-    padding-top: 0;
-    padding-bottom: 5px;
-    padding-left: 0;
+    /* padding-top: 0; */
+    /* padding-bottom: 5px; */
+    /* padding-left: 0; */
   }
 
   .carte-filtres i {
     margin-right: 10px;
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .filtres .filtres-buttons {
@@ -690,9 +693,9 @@ h5 {
     padding-bottom: 16px;
   }
 
-  .assistance-p {
-    padding-right: 30px;
-  }
+  /*.assistance-p {
+    padding-right: 0;
+  }*/
 
   footer div {
     width: 100%;
